@@ -10,44 +10,23 @@ import { Link } from 'gatsby'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <h1>
-            STUDIO 4.9 CO-OPERATIVE
-            </h1>
-        </div>
-
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="content has-text-centered">
-              {/* <div className="column is-4"> */}
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Contact Us
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                    <li>
-                      <Link to="https://github.com/sophiewo" className="navbar-item">
-                        Built by @sophiewo - See this website on github
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              {/* </div> */}
-            </div>
-          </div>
+      <footer className="footer has-background-black">
+        <div className="content has-text-centered has-text-white-ter">
+          <h3>Studio 4.9 Collective </h3>
+          <h4>
+            <Link to="https://github.com/sophiewo" className="navbar-item">
+              Built by @sophiewo - See this website on github
+            </Link>
+            <br></br>
+            <a
+              className="navbar-item"
+              href="/admin/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Admin
+            </a>
+          </h4>
         </div>
       </footer>
     )
