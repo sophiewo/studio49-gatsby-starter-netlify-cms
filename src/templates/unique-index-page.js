@@ -1,48 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import { Link, graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
-
 
 export const UniqueIndexPageTemplate = ({
-  // image,
+  image,
   title,
-  content, 
-  contentComponent }) => {
-
-  const PageContent = contentComponent || Content
-
-  return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              {/* <div
-                className="full-width-image margin-top-0"
-                style={{
-                  backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image
-                    })`,
-                  backgroundPosition: `top left`,
-                  backgroundAttachment: `fixed`,
-                }}
-              > */}
-              <PageContent className="content" content={content} />
-            </div>
-           {/* </div> */}
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-{/* }) => (
+}) => (
   <div>
     <div
       className="full-width-image margin-top-0"
@@ -78,71 +43,50 @@ export const UniqueIndexPageTemplate = ({
         </h1>
       </div>
     </div>
-  </div> */}
+  </div>
+)
 
 UniqueIndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
 }
 
-
-
 const UniqueIndexPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
       <UniqueIndexPageTemplate
-        image={post.frontmatter.image}
-        title={post.frontmatter.title}
-        contentComponent={HTMLContent}
-        content={post.html}
+        image={frontmatter.image}
+        title={frontmatter.title}
       />
     </Layout>
   )
 }
 
 UniqueIndexPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
+  }),
 }
-
-// UniqueIndexPage.propTypes = {
-//   data: PropTypes.shape({
-//     markdownRemark: PropTypes.shape({
-//       frontmatter: PropTypes.object,
-//     }),
-//   }),
-// }
-
 
 export default UniqueIndexPage
 
-export const UniqueIndexPageQuery = graphql`
-  query UniqueIndexPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+export const pageQuery = graphql`
+  query UniqueIndexPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "unique-index-page" } }) {
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+       }
       }
     }
-  }
 `
-
-// export const mainPageQuery = graphql`
-//   query UniqueIndexPageTemplate {
-//     markdownRemark(frontmatter: { templateKey: { eq: "unique-index-page" } }) {
-//       frontmatter {
-//         title
-//         image {
-//           childImageSharp {
-//             fluid(maxWidth: 2048, quality: 100) {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//        }
-//       }
-//     }
-// `
