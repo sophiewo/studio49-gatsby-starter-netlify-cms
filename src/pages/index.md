@@ -1,17 +1,17 @@
 ---
 templateKey: index-page
-title: Studio 4.9 Collective
+title: 1. Studio 4.9 Collective
 image: /img/sk_1.jpeg
-heading: What's it all about
-subheading: A group of young professionals looking to change the way we think
+heading: 5. Why is this heading down here?
+subheading: 2. A group of young professionals looking to change the way we think
   about housing in London
 mainpitch:
-  title: What's this all about?
+  title: 3. What is this all about
   description: >+
-    We met at The University of Bath in 2009 while studying for our BSc(Hons)
+    4. We met at The University of Bath in 2009 while studying for our BSc(Hons)
     Architecture, our final year studio was 4.9 and thus the collective was born
 
-description: We are now a collection of architects, designers, planning
+description: 6. We are now a collection of architects, designers, planning
   consultants, property managers, developers and gardeners
 intro:
   blurbs:
