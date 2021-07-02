@@ -1,10 +1,12 @@
-# Gatsby + Netlify CMS Starter
+# Studio 4.9 Collective Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
+## We are a collective of Architects, Designers and web developers. This site is to highlight our individual and collective work in persuit of better designed architecture for everyone.
 
-**Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+It is a simple one page app with some info about each of us and our contact details.
 
-This repo contains an example business website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
+It can be found deployed at [studio4point9.com](https://studio4point9.netlify.app/)
+
+### The site is Built using the Gatsby + Netlify CMS Starter 
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
@@ -57,6 +59,7 @@ $ npm run build
 $ netlify dev # or ntl dev
 ```
 
+# Uninstalled Media libraries as detailed below so as to speed up the build time. May reintroduce later but not needed at the moment.
 ### Media Libraries (installed, but optional)
 
 Media Libraries have been included in this starter as a default. If you are not planning to use `Uploadcare` or `Cloudinary` in your project, you **can** remove them from module import and registration in `src/cms/cms.js`. Here is an example of the lines to comment or remove them your project.
@@ -89,32 +92,10 @@ OR
 ```
 yarn remove netlify-cms-media-library-cloudinary
 ```
-## Getting Started (Without Netlify)
-
-```
-$ gatsby new [SITE_DIRECTORY_NAME] https://github.com/netlify-templates/gatsby-starter-netlify-cms/
-$ cd [SITE_DIRECTORY_NAME]
-$ npm run build
-$ npm run serve
-```
 
 ### Setting up the CMS
 
 Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
-
-## Debugging
-
-Windows users might encounter `node-gyp` errors when trying to npm install.
-To resolve, make sure that you have both Python 2.7 and the Visual C++ build environment installed.
-
-```
-npm config set python python2.7
-npm install --global --production windows-build-tools
-```
-
-[Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
-
-MacOS users might also encounter some errors, for more info check [node-gyp](https://github.com/nodejs/node-gyp). We recommend using the latest stable node version.
 
 ## Purgecss
 
