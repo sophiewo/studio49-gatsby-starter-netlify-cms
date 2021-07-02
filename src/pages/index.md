@@ -16,7 +16,7 @@ description: 6. We are now a collection of architects, designers, planning
 intro:
   blurbs:
     - image: /img/coffee.png
-      text: 7. This is the first blurb
+      text: 7. This is the first blurb. Test just changing text
     - image: /img/coffee-gear.png
       text: 8. Second
   heading: Why
