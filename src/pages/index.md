@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Studio 4.9 Collective
-image: /img/chemex.jpg
+image: /img/sk_1.jpeg
 heading: What's it all about
 subheading: A group of young professionals looking to change the way we think
   about housing in London
