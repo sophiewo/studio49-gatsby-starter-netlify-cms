@@ -1,5 +1,5 @@
 ---
 templateKey: unique-index-page
 title: Test
-image: /img/home-jumbotron.jpg
+image: /img/chemex.jpg
 ---
