@@ -10,14 +10,24 @@ import { Link } from 'gatsby'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black">
-        <div className="content has-text-centered has-text-white-ter">
-          <h3>Studio 4.9 Collective </h3>
+      <footer
+        style={{
+          backgroundColor: 'rgb(10, 36, 99)',
+          color: 'white',
+          lineHeight: '1',
+          padding: '0.25em',
+        }}
+      >
+        <div style={{
+          color: 'white',
+        }}
+        >
+          <h3>
+            Studio 4.9 Collective </h3>
           <h4>
-            <Link to="https://github.com/sophiewo" className="navbar-item">
-              Built by @sophiewo - See this website on github
+            <Link to="https://github.com/sophiewo" className="navbar-item" target="_blank" >
+              by @sophiewo - See how this website was built on github
             </Link>
-            <br></br>
             <a
               className="navbar-item"
               href="/admin/"

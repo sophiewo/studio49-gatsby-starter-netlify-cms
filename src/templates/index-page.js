@@ -41,7 +41,7 @@ export const IndexPageTemplate = ({
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            backgroundColor: 'rgb(10, 36, 99)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -54,7 +54,7 @@ export const IndexPageTemplate = ({
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            backgroundColor: 'rgb(10, 36, 99)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -90,21 +90,21 @@ export const IndexPageTemplate = ({
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      See all products
+                      Read more about us
                     </Link>
                   </div>
                 </div>
-                <div className="column is-12">
+                {/* <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
-                  {/* <BlogRoll />  */}
+                 <BlogRoll />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Read more
                     </Link> 
                   </div>
-              </div>
+              </div> */}
               </div>
             </div>
           </div>
