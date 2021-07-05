@@ -14,29 +14,32 @@ const Footer = class extends React.Component {
         style={{
           backgroundColor: 'rgb(10, 36, 99)',
           color: 'white',
-          lineHeight: '1',
-          padding: '0.25em',
+          // lineHeight: '1',
+          padding: '0.50em',
         }}
       >
-        <div style={{
-          color: 'white',
-        }}
-        >
+        <div class="content has-text-centered">
+          <div class="navbar-item">
           <h3>
-            Studio 4.9 Collective </h3>
+            Studio 4.9 Collective 
+            </h3>
           <h4>
             <Link to="https://github.com/sophiewo" className="navbar-item" target="_blank" >
-              by @sophiewo - See how this website was built on github
+              website build by @sophiewo
             </Link>
             <a
               className="navbar-item"
               href="/admin/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                color: 'white',
+              }}
             >
               Admin
             </a>
           </h4>
+        </div>
         </div>
       </footer>
     )
