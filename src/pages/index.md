@@ -1,8 +1,8 @@
 ---
+heading: 5. Why is this heading down here?
 templateKey: index-page
 title: 1. Studio 4.9 Collective
 image: /img/sk_1.jpeg
-heading: 5. Why is this heading down here?
 subheading: 2. A group of young professionals looking to change the way we think
   about housing in London
 mainpitch:
@@ -11,11 +11,9 @@ mainpitch:
     4. We met at The University of Bath in 2009 while studying for our BSc(Hons)
     Architecture, our final year studio was 4.9 and thus the collective was born
 
-description: 6. We are now a collection of architects, designers, planning
-  consultants, property managers, developers and gardeners
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/amersfoort-planting-plans-dragged-.jpg
       text: 7. This is the first blurb. Test just changing text
     - image: /img/coffee-gear.png
       text: 8. Second
@@ -37,4 +35,6 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+description: 6. We are now a collection of architects, designers, planning
+  consultants, property managers, developers and gardeners
 ---
