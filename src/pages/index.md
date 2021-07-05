@@ -14,7 +14,7 @@ intro:
   blurbs:
     - image: https://ucarecdn.com/69f8f9fb-46f8-4a70-ae9d-5b7141079f9d/
       text: 5. This is the first blurb. Test just changing text
-    - image: /img/coffee-gear.png
+    - image: /img/img_0806.jpeg
       text: 6. Second
     - text: Testing adding another blurb
       image: /img/chemex.jpg
