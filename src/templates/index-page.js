@@ -166,11 +166,13 @@ export const pageQuery = graphql`
             }
           }
         }
+        heading
         subheading
         mainpitch {
           title
           description
         }
+        description
         intro {
           blurbs {
             image {
@@ -182,6 +184,8 @@ export const pageQuery = graphql`
             }
             text
           }
+          heading
+          description
         }
       }
     }
