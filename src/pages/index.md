@@ -1,4 +1,5 @@
 ---
+heading: 5. Why is this heading down here?
 templateKey: index-page
 title: 1. Studio 4.9 Collective
 image: /img/sk_1.jpeg
@@ -15,4 +16,5 @@ intro:
       text: 5. This is the first blurb. Test just changing text
     - image: /img/coffee-gear.png
       text: 6. Second
+
 ---
