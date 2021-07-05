@@ -10,35 +10,38 @@ import { Link } from 'gatsby'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer
+      <footer class="footer"
         style={{
-          backgroundColor: 'rgb(10, 36, 99)',
-          color: 'white',
-          // lineHeight: '1',
-          padding: '0.50em',
+          backgroundColor: 'rgb(10, 36, 99)',        //   // lineHeight: '1',
+        //   padding: '0.50em',
         }}
       >
         <div class="content has-text-centered">
           <div class="navbar-item">
-          <h3>
+          <h2 style={{color:'white'}}>
             Studio 4.9 Collective 
-            </h3>
-          <h4>
+            </h2>
+            <p style={{ color: 'white' }}>
+              <a
+                className="navbar-item"
+                href="/admin/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: 'white'
+                }}
+              >
+                Admin
+              </a>
             <Link to="https://github.com/sophiewo" className="navbar-item" target="_blank" >
-              website build by @sophiewo
+                <p style={{ color: 'white' }}>
+                  <strong>
+                 Handmade in London by @sophiewo
+                  </strong>
+              </p>
+              
             </Link>
-            <a
-              className="navbar-item"
-              href="/admin/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: 'white',
-              }}
-            >
-              Admin
-            </a>
-          </h4>
+          </p>
         </div>
         </div>
       </footer>
