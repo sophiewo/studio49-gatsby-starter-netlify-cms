@@ -16,4 +16,6 @@ intro:
       text: 5. This is the first blurb. Test just changing text
     - image: /img/coffee-gear.png
       text: 6. Second
+    - text: Testing adding another blurb
+      image: /img/chemex.jpg
 ---
